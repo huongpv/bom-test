@@ -311,7 +311,7 @@
 		00CC2F7B2256F48B0023CE7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				00CC30652256FAEF0023CE7C /* CollectionVC */,
+				00CC30652256FAEF0023CE7C /* TestVC */,
 				00CC2F7C2256F48B0023CE7C /* Start */,
 				00CC2F832256F48B0023CE7C /* Base */,
 			);
@@ -788,7 +788,7 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
-		00CC30652256FAEF0023CE7C /* CollectionVC */ = {
+		00CC30652256FAEF0023CE7C /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
 				00CC30822256FE7B0023CE7C /* TestPresenter.swift */,
@@ -796,7 +796,7 @@
 				00CC30672256FAEF0023CE7C /* TestVC.xib */,
 				00CC30682256FAEF0023CE7C /* Cell */,
 			);
-			path = CollectionVC;
+			path = TestVC;
 			sourceTree = "<group>";
 		};
 		00CC30682256FAEF0023CE7C /* Cell */ = {
