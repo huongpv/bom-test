@@ -111,6 +111,9 @@
 		00CC307F2256FAEF0023CE7C /* CommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC30742256FAEF0023CE7C /* CommonModel.swift */; };
 		00CC30812256FE4A0023CE7C /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC30802256FE4A0023CE7C /* BaseProtocol.swift */; };
 		00CC30832256FE7B0023CE7C /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC30822256FE7B0023CE7C /* TestPresenter.swift */; };
+		00CC30872257113F0023CE7C /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC30852257113F0023CE7C /* DropDownView.swift */; };
+		00CC30882257113F0023CE7C /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00CC30862257113F0023CE7C /* DropDownView.xib */; };
+		00CC308A225712DB0023CE7C /* RectangularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC3089225712DB0023CE7C /* RectangularView.swift */; };
 		7314A2241830ED4F566D9CA6 /* Pods_Bom_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760CFA425707694E66E95E8D /* Pods_Bom_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -221,6 +224,9 @@
 		00CC30742256FAEF0023CE7C /* CommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModel.swift; sourceTree = "<group>"; };
 		00CC30802256FE4A0023CE7C /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		00CC30822256FE7B0023CE7C /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
+		00CC30852257113F0023CE7C /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		00CC30862257113F0023CE7C /* DropDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		00CC3089225712DB0023CE7C /* RectangularView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangularView.swift; sourceTree = "<group>"; };
 		7044FF5A6CB105466E65CA99 /* Pods-Bom-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bom-Test.release.xcconfig"; path = "Target Support Files/Pods-Bom-Test/Pods-Bom-Test.release.xcconfig"; sourceTree = "<group>"; };
 		760CFA425707694E66E95E8D /* Pods_Bom_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bom_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DDC5FC7472AE64D933453C /* Pods-Bom-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bom-Test.debug.xcconfig"; path = "Target Support Files/Pods-Bom-Test/Pods-Bom-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -311,7 +317,7 @@
 		00CC2F7B2256F48B0023CE7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				00CC30652256FAEF0023CE7C /* CollectionVC */,
+				00CC30652256FAEF0023CE7C /* TestVC */,
 				00CC2F7C2256F48B0023CE7C /* Start */,
 				00CC2F832256F48B0023CE7C /* Base */,
 			);
@@ -348,6 +354,7 @@
 		00CC2F832256F48B0023CE7C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				00CC3084225711270023CE7C /* Dropdown */,
 				00CC30802256FE4A0023CE7C /* BaseProtocol.swift */,
 				00CC2F842256F48B0023CE7C /* BaseVC.swift */,
 				00CC2F852256F48B0023CE7C /* BaseNavigationVC.swift */,
@@ -622,6 +629,7 @@
 		00CC2FCA2256F48B0023CE7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00CC3089225712DB0023CE7C /* RectangularView.swift */,
 				00CC2FCB2256F48B0023CE7C /* TapActionView.swift */,
 				00CC2FCC2256F48B0023CE7C /* CustomNibView.swift */,
 				00CC2FCD2256F48B0023CE7C /* RoundedView.swift */,
@@ -788,7 +796,7 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
-		00CC30652256FAEF0023CE7C /* CollectionVC */ = {
+		00CC30652256FAEF0023CE7C /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
 				00CC30822256FE7B0023CE7C /* TestPresenter.swift */,
@@ -796,7 +804,7 @@
 				00CC30672256FAEF0023CE7C /* TestVC.xib */,
 				00CC30682256FAEF0023CE7C /* Cell */,
 			);
-			path = CollectionVC;
+			path = TestVC;
 			sourceTree = "<group>";
 		};
 		00CC30682256FAEF0023CE7C /* Cell */ = {
@@ -806,6 +814,15 @@
 				00CC306A2256FAEF0023CE7C /* TestCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		00CC3084225711270023CE7C /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				00CC30852257113F0023CE7C /* DropDownView.swift */,
+				00CC30862257113F0023CE7C /* DropDownView.xib */,
+			);
+			path = Dropdown;
 			sourceTree = "<group>";
 		};
 		5BB63A694C8683DA39C3F25C /* Frameworks */ = {
@@ -885,6 +902,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CC30882257113F0023CE7C /* DropDownView.xib in Resources */,
 				00CC30762256FAEF0023CE7C /* TestVC.xib in Resources */,
 				00CC30772256FAEF0023CE7C /* TestCell.xib in Resources */,
 				00CC30592256F48C0023CE7C /* DateTimePicker.xib in Resources */,
@@ -1009,6 +1027,7 @@
 				00CC30462256F48C0023CE7C /* UIButton+Extension.swift in Sources */,
 				00CC30372256F48C0023CE7C /* CheckBox.swift in Sources */,
 				00CC300F2256F48C0023CE7C /* BaseNavigationVC.swift in Sources */,
+				00CC30872257113F0023CE7C /* DropDownView.swift in Sources */,
 				00CC305E2256F48C0023CE7C /* GeneralUtils.swift in Sources */,
 				00CC303B2256F48C0023CE7C /* ShadowView.swift in Sources */,
 				00CC307F2256FAEF0023CE7C /* CommonModel.swift in Sources */,
@@ -1041,6 +1060,7 @@
 				00CC305C2256F48C0023CE7C /* FileManagerUtils.swift in Sources */,
 				00CC30812256FE4A0023CE7C /* BaseProtocol.swift in Sources */,
 				00CC301B2256F48C0023CE7C /* APIUtilities.swift in Sources */,
+				00CC308A225712DB0023CE7C /* RectangularView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

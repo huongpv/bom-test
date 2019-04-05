@@ -10,6 +10,7 @@ import UIKit
 
 class TestVC: BaseVC {
     // MARK: - Outlets
+    @IBOutlet weak var dropDownView: DropDownView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Constraints
@@ -35,6 +36,10 @@ class TestVC: BaseVC {
     private func setupView() {
         // presenter
         testPresenter.attachViewController(self)
+        
+        // dropDownView
+        dropDownView.dropDown.dataSource = ["A", "B", "C"]
+        dropDownView.delegate = self
         
         setupCollectionView()
     }
@@ -107,4 +112,10 @@ extension TestVC: TestProtocol {
         collectionView.reloadData()
     }
     
+}
+
+extension TestVC: DropDownViewDelegate {
+    func didChooseItem(at idx: Int, dropdown: DropDownView?) {
+        print(idx)
+    }
 }
