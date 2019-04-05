@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Set Loading Screen as root screen
-        let loadingVC = LoadingVC.create()
-        SystemBoots.instance.changeRoot(window: &window, rootController: loadingVC)
+        let testVC = TestVC.create()
+        let navController = BaseNavigationVC(rootViewController: testVC)
+        SystemBoots.instance.changeRoot(window: &window, rootController: navController)
         
         // Basic configuration of app
         basicAppConfig()
