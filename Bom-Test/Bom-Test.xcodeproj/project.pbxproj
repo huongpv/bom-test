@@ -112,6 +112,10 @@
 		00CC30812256FE4A0023CE7C /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC30802256FE4A0023CE7C /* BaseProtocol.swift */; };
 		00CC30832256FE7B0023CE7C /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC30822256FE7B0023CE7C /* TestPresenter.swift */; };
 		7314A2241830ED4F566D9CA6 /* Pods_Bom_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760CFA425707694E66E95E8D /* Pods_Bom_Test.framework */; };
+		FABC6E462259ED7B008F0A05 /* BarChartOneColView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC6E452259ED7B008F0A05 /* BarChartOneColView.swift */; };
+		FABC6E482259ED85008F0A05 /* BarChartOneColView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABC6E472259ED85008F0A05 /* BarChartOneColView.xib */; };
+		FABC6E4B2259F715008F0A05 /* BarChartTwoColView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABC6E492259F714008F0A05 /* BarChartTwoColView.xib */; };
+		FABC6E4C2259F715008F0A05 /* BarChartTwoColView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABC6E4A2259F714008F0A05 /* BarChartTwoColView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -224,6 +228,10 @@
 		7044FF5A6CB105466E65CA99 /* Pods-Bom-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bom-Test.release.xcconfig"; path = "Target Support Files/Pods-Bom-Test/Pods-Bom-Test.release.xcconfig"; sourceTree = "<group>"; };
 		760CFA425707694E66E95E8D /* Pods_Bom_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bom_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DDC5FC7472AE64D933453C /* Pods-Bom-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bom-Test.debug.xcconfig"; path = "Target Support Files/Pods-Bom-Test/Pods-Bom-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		FABC6E452259ED7B008F0A05 /* BarChartOneColView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartOneColView.swift; sourceTree = "<group>"; };
+		FABC6E472259ED85008F0A05 /* BarChartOneColView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarChartOneColView.xib; sourceTree = "<group>"; };
+		FABC6E492259F714008F0A05 /* BarChartTwoColView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarChartTwoColView.xib; sourceTree = "<group>"; };
+		FABC6E4A2259F714008F0A05 /* BarChartTwoColView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartTwoColView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +470,7 @@
 		00CC2FA22256F48B0023CE7C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FABC6E442259ED51008F0A05 /* Barchart */,
 				00CC2FA32256F48B0023CE7C /* View */,
 			);
 			path = Views;
@@ -825,6 +834,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FABC6E442259ED51008F0A05 /* Barchart */ = {
+			isa = PBXGroup;
+			children = (
+				FABC6E4A2259F714008F0A05 /* BarChartTwoColView.swift */,
+				FABC6E492259F714008F0A05 /* BarChartTwoColView.xib */,
+				FABC6E452259ED7B008F0A05 /* BarChartOneColView.swift */,
+				FABC6E472259ED85008F0A05 /* BarChartOneColView.xib */,
+			);
+			path = Barchart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -885,7 +905,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABC6E482259ED85008F0A05 /* BarChartOneColView.xib in Resources */,
 				00CC30762256FAEF0023CE7C /* TestVC.xib in Resources */,
+				FABC6E4B2259F715008F0A05 /* BarChartTwoColView.xib in Resources */,
 				00CC30772256FAEF0023CE7C /* TestCell.xib in Resources */,
 				00CC30592256F48C0023CE7C /* DateTimePicker.xib in Resources */,
 				00CC2DC92256EE430023CE7C /* LaunchScreen.storyboard in Resources */,
@@ -955,6 +977,7 @@
 				00CC30092256F48B0023CE7C /* Colors.swift in Sources */,
 				00CC304A2256F48C0023CE7C /* UITableViewCell+Extension.swift in Sources */,
 				00CC303D2256F48C0023CE7C /* UIFont+Extension.swift in Sources */,
+				FABC6E4C2259F715008F0A05 /* BarChartTwoColView.swift in Sources */,
 				00CC302D2256F48C0023CE7C /* BaseCollectionView.swift in Sources */,
 				00CC30252256F48C0023CE7C /* IAPProducts.swift in Sources */,
 				00CC30142256F48C0023CE7C /* APIRequest.swift in Sources */,
@@ -1015,6 +1038,7 @@
 				00CC30282256F48C0023CE7C /* NotificationPermission.swift in Sources */,
 				00CC30642256F48C0023CE7C /* Owner.swift in Sources */,
 				00CC302C2256F48C0023CE7C /* KeyboardHandlerScrollView.swift in Sources */,
+				FABC6E462259ED7B008F0A05 /* BarChartOneColView.swift in Sources */,
 				00CC30112256F48C0023CE7C /* APIOperation.swift in Sources */,
 				00CC30432256F48C0023CE7C /* Int+Extension.swift in Sources */,
 				00CC30212256F48C0023CE7C /* CustomView.swift in Sources */,
