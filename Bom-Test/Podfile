@@ -11,4 +11,7 @@ target 'Bom-Test' do
   pod 'SVProgressHUD'
   pod 'Kingfisher', '~> 5.0'
   
+  # Used for draw Charts
+  pod 'Highcharts', '~> 7.1.1'
+  
 end
